@@ -6,7 +6,11 @@
 
 #pragma once
 
+#ifndef ARDUINO_ARCH_STM32
 #include <EEPROM.h>
+#else
+#include <FlashStorage_STM32.hpp>
+#endif
 
 class MFEEPROM
 {

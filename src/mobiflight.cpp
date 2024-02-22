@@ -37,6 +37,9 @@
 #if MF_CUSTOMDEVICE_SUPPORT == 1
 #include "CustomDevice.h"
 #endif
+#ifdef ARDUINO_ARCH_STM32
+#include <FlashStorage_STM32.h>
+#endif 
 
 #define MF_BUTTON_DEBOUNCE_MS     10 // time between updating the buttons
 #define MF_ENCODER_DEBOUNCE_MS    1  // time between encoder updates

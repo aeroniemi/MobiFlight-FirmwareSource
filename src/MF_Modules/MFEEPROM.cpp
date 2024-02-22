@@ -7,14 +7,15 @@
 #include <Arduino.h>
 #include "MFEEPROM.h"
 #include "MFBoards.h"
-
+#include "mobiflight.h"
 MFEEPROM::MFEEPROM() {}
 
 void MFEEPROM::init(void)
 {
-#if !defined(ARDUINO_ARCH_AVR)
+    #if defined(ARDUINO_ARCH_RP2040)
     EEPROM.begin(4096);
-#endif
+    #endif
+    
     _eepromLength = EEPROM.length();
 }
 

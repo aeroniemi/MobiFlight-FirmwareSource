@@ -14,7 +14,7 @@
 #endif
 
 #if MF_ANALOG_SUPPORT == 1
-#include "Analog.h"
+#include "analog.hpp"
 #endif
 #if MF_INPUT_SHIFTER_SUPPORT == 1
 #include "InputShifter.h"

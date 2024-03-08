@@ -5,7 +5,7 @@
 #define MF_SEGMENT_SUPPORT 1
 #endif
 #ifndef MF_LCD_SUPPORT
-#define MF_LCD_SUPPORT 1
+#define MF_LCD_SUPPORT 0
 #endif
 #ifndef MF_STEPPER_SUPPORT
 #define MF_STEPPER_SUPPORT 0

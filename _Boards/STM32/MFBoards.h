@@ -40,10 +40,10 @@
 #define MOBIFLIGHT_NAME         "MobiFlight STM32"
 #endif
 #ifndef MEMLEN_CONFIG
-#define MEMLEN_CONFIG           286    // MUST be less than EEPROM_SIZE!! MEM_OFFSET_CONFIG + MEM_LEN_CONFIG <= EEPROM_SIZE, see: eeprom_write_block (MEM_OFFSET_CONFIG, configBuffer, MEM_LEN_CONFIG);
+#define MEMLEN_CONFIG           440    // MUST be less than EEPROM_SIZE!! MEM_OFFSET_CONFIG + MEM_LEN_CONFIG <= EEPROM_SIZE, see: eeprom_write_block (MEM_OFFSET_CONFIG, configBuffer, MEM_LEN_CONFIG);
 #endif
 #ifndef MEMLEN_NAMES_BUFFER
-#define MEMLEN_NAMES_BUFFER     220    // max. size for configBuffer, contains only names from inputs
+#define MEMLEN_NAMES_BUFFER     350    // max. size for configBuffer, contains only names from inputs
 #endif
 #ifndef MF_MAX_DEVICEMEM
 #define MF_MAX_DEVICEMEM        420    // max. memory size for devices
